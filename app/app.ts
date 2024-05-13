@@ -6,6 +6,7 @@ import { typeServices } from "./services/typeServices";
 let PokeServices = new PokemonServices()
 let SkillsServices = new abilitiesServices()
 let MovesServices = new movesServices()
+let TypeServices = new typeServices()
 
 // let pokemon = new Pokemon()
 
