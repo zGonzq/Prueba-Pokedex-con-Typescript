@@ -3,9 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const pokemonServices_1 = require("./services/pokemonServices");
 const abilitiesServices_1 = require("./services/abilitiesServices");
 const movesServices_1 = require("./services/movesServices");
+const typeServices_1 = require("./services/typeServices");
 let PokeServices = new pokemonServices_1.PokemonServices();
 let SkillsServices = new abilitiesServices_1.abilitiesServices();
 let MovesServices = new movesServices_1.movesServices();
+let TypeServices = new typeServices_1.typeServices();
 // let pokemon = new Pokemon()
 // const pokemonData = {
 //     IDpoke: 834,
@@ -36,8 +38,8 @@ let MovesServices = new movesServices_1.movesServices();
 //         console.log(ability)
 //     })
 // })
-MovesServices.getAllMoves().then((moves) => {
-    moves.forEach((move) => {
-        console.log(move);
-    });
-});
+// MovesServices.getAllMoves().then((moves) => {
+//     moves.forEach((move) => {
+//         console.log(move)
+//     })
+// })

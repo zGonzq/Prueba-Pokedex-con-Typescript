@@ -2,13 +2,14 @@ import { PokemonServices } from "./services/pokemonServices";
 import { abilitiesServices } from "./services/abilitiesServices";
 import { movesServices } from "./services/movesServices";
 import { typeServices } from "./services/typeServices";
+import { Pokemon } from "./models/pokemon";
 
 let PokeServices = new PokemonServices()
 let SkillsServices = new abilitiesServices()
 let MovesServices = new movesServices()
 let TypeServices = new typeServices()
 
-// let pokemon = new Pokemon()
+let pokemon = new Pokemon()
 
 // const pokemonData = {
 //     IDpoke: 834,
@@ -35,13 +36,13 @@ let TypeServices = new typeServices()
 //    console.log(pokemon)
 // })
 
-// let name = "Pikachu"
+let name = "Pikachu"
 
-// PokeServices.getPokemonByName(name).then((pokemons: Pokemon[]) => {
-//    pokemons.forEach((pokemon) => {
-//        console.log(pokemon)
-//    })
-// })
+PokeServices.getPokemonByName(name).then((pokemons: Pokemon[]) => {
+   pokemons.forEach((pokemon) => {
+       console.log(pokemon)
+   })
+})
 
 // SkillsServices.getAllAbilities().then((abilities) => {
 //     abilities.forEach((ability) => {
